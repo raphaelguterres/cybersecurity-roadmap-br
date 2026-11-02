@@ -11,7 +11,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-0D121A?style=flat-square)](LICENSE)
 [![Contribuições](https://img.shields.io/badge/Contribuições-Bem--vindas-BAF568?style=flat-square&labelColor=0D121A)](CONTRIBUTING.md)
 
-**[🚀 Comece aqui](START-HERE.md)** · **[🖥️ Dashboard Study OS](site/README.md)** · **[🗺️ Roadmap 24 semanas](ROADMAP.md)** · **[🤝 Comunidade](COMUNIDADE.md)**
+**[🖥️ ABRIR DASHBOARD STUDY OS](https://raphaelguterres.github.io/cybersecurity-roadmap-br/)** · **[🚀 Comece aqui](START-HERE.md)** · **[🗺️ Roadmap 24 semanas](ROADMAP.md)** · **[🤝 Comunidade](COMUNIDADE.md)**
 
 </div>
 
@@ -37,13 +37,13 @@ FUNDAMENTOS → REDES + SISTEMAS → PROGRAMAÇÃO
 
 ## Study OS — dashboard exclusivo de estudos
 
-Uma aplicação web estática em `site/`, com **HTML, CSS e JavaScript puro**, sem dependência de banco, login, servidor próprio ou serviço pago. Quando publicado em GitHub Pages, será acessível pelo navegador.
+Uma aplicação web estática em `site/`, com **HTML, CSS e JavaScript puro**, sem dependência de banco, login, servidor próprio ou serviço pago. O portal está publicado no [GitHub Pages](https://raphaelguterres.github.io/cybersecurity-roadmap-br/).
 
 **Inclui:** progresso por módulo e trilha, 24 semanas marcáveis, oito laboratórios, seis desafios, quiz com correção, pesquisa de fontes oficiais, referências de vídeos de desenvolvedores e backup JSON importável/exportável.
 
 > **Privacidade:** o progresso permanece no `localStorage` do dispositivo; não é enviado a este projeto. Limpar os dados do navegador apaga o progresso se não houver backup. É um registro **autodeclarado**, não uma certificação.
 
-**[Ver código do dashboard](site/)** · **[Executar localmente](site/README.md)** · **[Status de publicação](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/deploy-pages.yml)**
+**[Acessar dashboard online](https://raphaelguterres.github.io/cybersecurity-roadmap-br/)** · **[Ver código](site/)** · **[Executar localmente](site/README.md)** · **[Status de publicação](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/deploy-pages.yml)**
 
 ## Trilhas organizadas por nível
 
