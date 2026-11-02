@@ -116,3 +116,146 @@ window.ROADMAP_DATA = {
     {q:"Para contribuir com projeto open source, o que ajuda mais?",options:["PR pequeno, documentado e reproduzível","Copiar curso protegido por copyright","Enviar token para o mantenedor","Não ler CONTRIBUTING"],a:0,why:"Mudanças pequenas, baseadas em fontes e com contexto são mais fáceis de revisar."}
   ]
 };
+// Fontes complementares para engenharia de software; curadoria da comunidade.
+window.ROADMAP_DATA.resources.push(...[
+  {
+    "id": "mdn",
+    "name": "MDN — Desenvolvimento Web",
+    "url": "https://developer.mozilla.org/pt-BR/docs/Web",
+    "source": "Mozilla / MDN",
+    "area": "Frontend",
+    "level": "Iniciante",
+    "access": "Documentação pública",
+    "description": "HTML, CSS, JavaScript, HTTP e acessibilidade."
+  },
+  {
+    "id": "react",
+    "name": "React — Learn",
+    "url": "https://react.dev/learn",
+    "source": "React",
+    "area": "Frontend",
+    "level": "Intermediário",
+    "access": "Documentação oficial",
+    "description": "Componentes, estados e interfaces web."
+  },
+  {
+    "id": "node",
+    "name": "Node.js — Learn",
+    "url": "https://nodejs.org/en/learn",
+    "source": "Node.js",
+    "area": "Backend",
+    "level": "Intermediário",
+    "access": "Documentação oficial",
+    "description": "JavaScript no servidor, módulos, HTTP e runtime."
+  },
+  {
+    "id": "rails",
+    "name": "Ruby on Rails — Guides",
+    "url": "https://guides.rubyonrails.org/",
+    "source": "Ruby on Rails",
+    "area": "Backend",
+    "level": "Intermediário",
+    "access": "Documentação oficial",
+    "description": "Conceitos, arquitetura MVC e construção de aplicações."
+  },
+  {
+    "id": "fastapi",
+    "name": "FastAPI — Documentação",
+    "url": "https://fastapi.tiangolo.com/",
+    "source": "FastAPI",
+    "area": "Backend",
+    "level": "Intermediário",
+    "access": "Documentação pública",
+    "description": "APIs Python, validação de dados e documentação automática."
+  },
+  {
+    "id": "android",
+    "name": "Android Developers — Cursos",
+    "url": "https://developer.android.com/courses",
+    "source": "Google / Android",
+    "area": "Mobile",
+    "level": "Iniciante",
+    "access": "Treinamento oficial",
+    "description": "Kotlin, Jetpack Compose, arquitetura e testes Android."
+  },
+  {
+    "id": "flutter",
+    "name": "Learn Flutter",
+    "url": "https://docs.flutter.dev/learn",
+    "source": "Google / Flutter",
+    "area": "Mobile",
+    "level": "Iniciante",
+    "access": "Documentação oficial",
+    "description": "Dart, widgets, estados e aplicativos multiplataforma."
+  },
+  {
+    "id": "swift",
+    "name": "Develop in Swift — Apple",
+    "url": "https://developer.apple.com/tutorials/develop-in-swift",
+    "source": "Apple",
+    "area": "Mobile",
+    "level": "Iniciante",
+    "access": "Tutorial oficial",
+    "description": "Introdução a apps Apple com Swift e SwiftUI."
+  },
+  {
+    "id": "go",
+    "name": "Go — Tutoriais oficiais",
+    "url": "https://go.dev/doc/tutorial/",
+    "source": "Go",
+    "area": "Backend",
+    "level": "Iniciante",
+    "access": "Documentação pública",
+    "description": "Linguagem Go, módulos, APIs, testes e bancos de dados."
+  },
+  {
+    "id": "gitdoc",
+    "name": "Git — Documentação",
+    "url": "https://git-scm.com/doc",
+    "source": "Git",
+    "area": "Programação",
+    "level": "Iniciante",
+    "access": "Documentação oficial",
+    "description": "Histórico, commits, branches e workflows colaborativos."
+  },
+  {
+    "id": "playwright",
+    "name": "Playwright — Testes E2E",
+    "url": "https://playwright.dev/docs/intro",
+    "source": "Microsoft / Playwright",
+    "area": "Qualidade",
+    "level": "Intermediário",
+    "access": "Documentação oficial",
+    "description": "Testes end-to-end em navegadores e integração em CI."
+  },
+  {
+    "id": "kubernetes",
+    "name": "Kubernetes — Docs",
+    "url": "https://kubernetes.io/docs/",
+    "source": "Kubernetes",
+    "area": "Cloud",
+    "level": "Avançado",
+    "access": "Documentação pública",
+    "description": "Conceitos, orquestração, operações e controles de cluster."
+  },
+  {
+    "id": "awsarch",
+    "name": "AWS Well-Architected Framework",
+    "url": "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html",
+    "source": "Amazon Web Services",
+    "area": "Arquitetura",
+    "level": "Intermediário",
+    "access": "Guia oficial público",
+    "description": "Trade-offs, confiabilidade, segurança e eficiência de sistemas."
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript Handbook",
+    "url": "https://www.typescriptlang.org/docs/handbook/intro.html",
+    "source": "TypeScript",
+    "area": "Frontend",
+    "level": "Intermediário",
+    "access": "Documentação oficial",
+    "description": "Sistema de tipos e desenvolvimento JavaScript escalável."
+  }
+]);

@@ -71,3 +71,9 @@ Nunca trate a existência de um serviço aberto como autorização para testar s
 Use a [Issue de indicação](.github/ISSUE_TEMPLATE/indicar-recurso.yml) ou PR. Inclua título, URL primária, autor, tema, nível, idioma, custo quando confirmado, data consultada e justificativa. Evite links de pirataria e material sem licença.
 
 **Curadoria inicial:** 02 de novembro de 2026. Atualização contínua por revisão editorial e contribuições.
+
+## Trilhas complementares de dev (fontes oficiais)
+
+[MDN Web](https://developer.mozilla.org/pt-BR/docs/Web) · [React Learn](https://react.dev/learn) · [Node.js Learn](https://nodejs.org/en/learn) · [Rails Guides](https://guides.rubyonrails.org/) · [FastAPI](https://fastapi.tiangolo.com/) · [Android Developers](https://developer.android.com/courses) · [Flutter](https://docs.flutter.dev/learn) · [Develop in Swift](https://developer.apple.com/tutorials/develop-in-swift) · [Go Tutorials](https://go.dev/doc/tutorial/) · [Playwright](https://playwright.dev/docs/intro) · [Kubernetes](https://kubernetes.io/docs/) · [AWS Well-Architected](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html).
+
+**[Confira as áreas de desenvolvimento, objetivos e exercícios](DEV_AREAS.md)** e **[fichas de estudos baseadas em fontes de vídeos](videos/INSIGHTS.md)**.
