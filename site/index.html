@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="Cybersecurity Roadmap BR — dashboard gratuito, privado e interativo de estudos de cibersegurança. Trilhas, desafios, quizzes, laboratórios e referências oficiais.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Cybersecurity Roadmap BR — Study OS</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+<div class="shell">
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#inicio" aria-label="Cybersecurity Roadmap BR, início">
+      <span class="brand-symbol" aria-hidden="true">C<span class="accent">/</span>R</span>
+      <span class="brand-text"><strong>CYBERSECURITY</strong><small>ROADMAP BR <span class="version">V2.0</span></small></span>
+    </a>
+    <div class="sidebar-caption">WORKSPACE</div>
+    <nav aria-label="Menu principal" class="nav">
+      <a href="#inicio" class="nav-link selected" data-nav="inicio"><span>◫</span> Visão geral</a>
+      <a href="#trilhas" class="nav-link" data-nav="trilhas"><span>◈</span> Trilhas de estudo</a>
+      <a href="#roadmap" class="nav-link" data-nav="roadmap"><span>▤</span> Plano de 24 semanas</a>
+      <a href="#laboratorios" class="nav-link" data-nav="laboratorios"><span>⌘</span> Laboratórios</a>
+      <a href="#desafios" class="nav-link" data-nav="desafios"><span>⚑</span> Desafios</a>
+      <a href="#quiz" class="nav-link" data-nav="quiz"><span>◇</span> Quiz de segurança</a>
+      <a href="#biblioteca" class="nav-link" data-nav="biblioteca"><span>▦</span> Biblioteca oficial</a>
+    </nav>
+    <div class="sidebar-caption space-top">COLABORE</div>
+    <nav aria-label="Comunidade" class="nav">
+      <a class="nav-link external" href="https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions" target="_blank" rel="noopener noreferrer"><span>♧</span> Discussions ↗</a>
+      <a class="nav-link external" href="https://github.com/raphaelguterres/cybersecurity-roadmap-br/issues" target="_blank" rel="noopener noreferrer"><span>⊞</span> Issues ↗</a>
+      <a class="nav-link external" href="https://github.com/raphaelguterres/cybersecurity-roadmap-br" target="_blank" rel="noopener noreferrer"><span>⌁</span> Repositório ↗</a>
+    </nav>
+    <div class="sidebar-bottom">
+      <div class="online-indicator"><span class="online-dot"></span> PLATAFORMA OPEN SOURCE</div>
+      <p>Sem cadastro, anúncios, rastreadores ou servidor de progresso.</p>
+      <a href="https://github.com/raphaelguterres" target="_blank" rel="noopener noreferrer">by Raphael Guterres ↗</a>
+    </div>
+  </aside>
+
+  <div class="main-area">
+    <header class="topbar">
+      <button class="mobile-toggle ghost-button" id="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="breadcrumb"><span>CYBER / LEARNING SYSTEM</span><span class="sep">/</span><strong id="page-label">VISÃO GERAL</strong></div>
+      <div class="top-actions">
+        <span class="privacy"><span class="online-dot"></span> DADOS LOCAIS</span>
+        <button type="button" class="ghost-button small" id="export-btn" title="Exportar progresso em JSON">↓ Exportar</button>
+        <button type="button" class="ghost-button small" id="import-btn" title="Importar progresso de backup">↑ Importar</button>
+        <input type="file" id="import-file" accept=".json,application/json" hidden>
+      </div>
+    </header>
+
+    <main id="main" tabindex="-1">
+      <div class="heading">
+        <div class="eyebrow"><span class="small-square"></span> OPEN LEARNING PLATFORM <span class="eyebrow-line"></span> 2026 EDITION</div>
+        <h1 id="view-title">Seu centro de comando<br><em>de estudos.</em></h1>
+        <p class="heading-description" id="view-description">Um mapa para desenvolver competências reais em cibersegurança, com progresso privado e prática documentada.</p>
+      </div>
+
+      <section class="view" id="view-inicio" data-view="inicio">
+        <div class="hero-grid">
+          <article class="panel hero-panel">
+            <div class="section-kicker">01 / EVOLUÇÃO</div>
+            <div class="hero-inner">
+              <div>
+                <p class="subdued label-uppercase">PROGRESSO TOTAL DO PERCURSO</p>
+                <div class="large-number"><span id="total-percent">0</span><span class="number-sign">%</span></div>
+                <p class="subdued hero-note" id="overall-caption">Seu percurso começa aqui.</p>
+                <a href="#trilhas" class="primary-link">Continuar aprendizado <span>↗</span></a>
+              </div>
+              <div class="donut" id="overall-donut" role="img" aria-label="Progresso 0 porcento"><div class="donut-inner"><span id="donut-percent">0%</span><small>CONCLUÍDO</small></div></div>
+            </div>
+          </article>
+          <article class="panel status-panel">
+            <div class="section-kicker">02 / STATUS</div>
+            <div class="stat-row"><span>Semanas concluídas</span><strong id="week-count">0 <small>/ 24</small></strong></div>
+            <div class="stat-row"><span>Módulos estudados</span><strong id="unit-count">0</strong></div>
+            <div class="stat-row"><span>Laboratórios realizados</span><strong id="lab-count">0</strong></div>
+            <div class="stat-row"><span>Desafios finalizados</span><strong id="challenge-count">0</strong></div>
+            <div class="stat-row"><span>Quizzes aprovados</span><strong id="quiz-count">0</strong></div>
+            <div class="quiet-info"><span>◈</span> O progresso é autodeclarado e salvo neste navegador. Não é certificação.</div>
+          </article>
+        </div>
+        <div class="section-header"><div><div class="section-kicker">03 / SEU CAMINHO</div><h2>Escolha uma especialização</h2></div><a href="#trilhas" class="text-link">Explorar todas →</a></div>
+        <div class="track-grid" id="overview-tracks"></div>
+        <div class="bottom-grid">
+          <article class="panel padded">
+            <div class="section-kicker">04 / PRÓXIMA ETAPA</div>
+            <h2 id="next-week-name">Semana 01</h2>
+            <p class="subdued" id="next-week-description">A primeira etapa do roadmap.</p>
+            <div class="section-footer"><a href="#roadmap" class="text-link">Abrir planejamento →</a></div>
+          </article>
+          <article class="panel padded">
+            <div class="section-kicker">05 / COMUNIDADE</div>
+            <h2>Aprender é coletivo.</h2>
+            <p class="subdued">Revise recursos, compartilhe aprendizados e ajude outras pessoas a evoluir. Contribuições de todos os níveis são bem-vindas.</p>
+            <div class="section-footer"><a href="https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions" class="text-link" target="_blank" rel="noopener noreferrer">Participar do GitHub Discussions ↗</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view" id="view-trilhas" data-view="trilhas" hidden>
+        <div class="section-header"><h2>Trilhas por especialidade</h2><span class="subdued" id="tracks-summary"></span></div>
+        <div class="filters" role="group" aria-label="Filtrar trilhas" id="track-filters">
+          <button type="button" data-level="Todas" class="filter active">Todas</button>
+          <button type="button" data-level="Iniciante" class="filter">Iniciante</button>
+          <button type="button" data-level="Intermediário" class="filter">Intermediário</button>
+          <button type="button" data-level="Avançado" class="filter">Avançado</button>
+        </div>
+        <div id="track-list" class="track-list"></div>
+      </section>
+
+      <section class="view" id="view-roadmap" data-view="roadmap" hidden>
+        <div class="row-between"><p class="subdued">Seis ciclos, 24 semanas. Referência flexível de 6 a 8 horas por semana.</p><span id="roadmap-count" class="count-pill">0/24</span></div>
+        <div class="roadmap-progress"><div id="roadmap-progress-fill"></div></div>
+        <div class="timeline" id="week-list"></div>
+      </section>
+
+      <section class="view" id="view-laboratorios" data-view="laboratorios" hidden>
+        <div class="intro-note"><strong>Ambiente autorizado.</strong> Faça os exercícios apenas em máquinas próprias, VMs isoladas ou plataformas com autorização explícita. Nunca publique credenciais, dumps ou logs privados.</div>
+        <div id="lab-list" class="cards-list"></div>
+      </section>
+
+      <section class="view" id="view-desafios" data-view="desafios" hidden>
+        <p class="subdued">Exercícios de aplicação, projetados para documentação pública segura. Desafios não exigem acessar serviços de terceiros.</p>
+        <div id="challenge-list" class="cards-list"></div>
+      </section>
+
+      <section class="view" id="view-quiz" data-view="quiz" hidden>
+        <div class="quiz-intro panel padded" id="quiz-intro"><span class="section-kicker">AVALIAÇÃO FORMATIVA</span><h2>Teste o que você aprendeu</h2><p class="subdued">10 questões por rodada, selecionadas de uma base aberta. O resultado é para autoconhecimento, não certificação.</p><button type="button" id="start-quiz" class="primary-button">Iniciar quiz →</button></div>
+        <div class="quiz-stage" id="quiz-stage" hidden></div>
+      </section>
+
+      <section class="view" id="view-biblioteca" data-view="biblioteca" hidden>
+        <div class="search-panel"><label for="resource-search">BUSCAR FONTE DE ESTUDO</label><input type="search" id="resource-search" placeholder="Ex.: OWASP, redes, NIST, Wazuh..." autocomplete="off"><p class="subdued">Curadoria de fontes oficiais e plataformas educacionais conhecidas. Algumas oferecem planos pagos opcionais.</p></div>
+        <div class="filters" role="group" aria-label="Filtrar recursos" id="resource-filters"></div>
+        <p class="subdued" id="resource-count"></p>
+        <div class="resource-grid" id="resource-list"></div>
+      </section>
+
+      <footer class="footer"><span>CYBERSECURITY ROADMAP BR © 2026 · OPEN SOURCE</span><span>DESENVOLVIDO PARA A COMUNIDADE BRASILEIRA · <a href="https://github.com/raphaelguterres/cybersecurity-roadmap-br" target="_blank" rel="noopener noreferrer">GITHUB ↗</a></span></footer>
+    </main>
+  </div>
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

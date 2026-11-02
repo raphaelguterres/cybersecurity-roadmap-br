@@ -1,0 +1,32 @@
+name: Content and Site Quality
+
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    name: Validate docs, catalog and scripts
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Check JavaScript syntax
+        run: |
+          node --check site/data.js
+          node --check site/app.js
+          node --check scripts/test_catalog.cjs
+      - name: Validate study catalog
+        run: node scripts/test_catalog.cjs
+      - name: Check local Markdown and site links
+        run: python3 scripts/validate_repo.py
+      - name: Check for accidental private artifacts
+        run: python3 scripts/check_sensitive_files.py
