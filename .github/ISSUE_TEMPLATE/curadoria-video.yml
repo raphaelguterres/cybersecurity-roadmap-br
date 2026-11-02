@@ -1,0 +1,40 @@
+name: "🎬 Sugerir aprendizado de vídeo"
+description: "Proponha uma ficha de estudo com fonte original, contexto e exercício verificável."
+title: "[Vídeo / Curadoria] "
+body:
+  - type: input
+    id: source
+    attributes:
+      label: "URL do vídeo ou episódio original"
+      placeholder: "https://www.youtube.com/watch?v=..."
+    validations:
+      required: true
+  - type: input
+    id: creator
+    attributes:
+      label: "Criador e título"
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: "O que foi realmente verificado?"
+      description: "Data, minuto/trecho se assistido, e diferenciação entre opinião e fato. Não envie transcrições protegidas."
+    validations:
+      required: true
+  - type: textarea
+    id: exercise
+    attributes:
+      label: "Exercício e documentação técnica independente"
+      description: "Proponha prática autorizada e links oficiais que validam aspectos técnicos."
+    validations:
+      required: true
+  - type: checkboxes
+    id: ethics
+    attributes:
+      label: "Checklist editorial"
+      options:
+        - label: "Indiquei claramente o que não foi verificado e não inventei citações."
+          required: true
+        - label: "Não copiei transcrição, conteúdo pago ou dados pessoais."
+          required: true

@@ -75,7 +75,7 @@ Uma aplicação web estática em `site/`, com **HTML, CSS e JavaScript puro**, s
 
 Priorizamos documentação primária como **NIST, CISA, MITRE, OWASP, Wazuh, Microsoft Learn, Python, MDN, GitHub Skills e Wireshark**.
 
-**[📚 Biblioteca curada](RECURSOS.md)** · **[🎬 Lucas Montano e Mano Deyvin: vídeos e exercícios](videos/README.md)**
+**[📚 Biblioteca curada](RECURSOS.md)** · **[🧭 Áreas de desenvolvimento](DEV_AREAS.md)** · **[🎬 Vídeos e exercícios](videos/README.md)** · **[🧠 Insights de vídeos atribuídos](videos/INSIGHTS.md)**
 
 Conteúdos em vídeo são **referências externas atribuídas**. As atividades propostas são do nosso projeto e não resumem vídeos sem verificação. Opiniões e tendências devem ser contrastadas com fontes técnicas.
 

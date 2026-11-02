@@ -38,3 +38,7 @@ Esta trilha é complementar à cibersegurança e não pressupõe que todas as pe
 Crie uma API local de tarefas fictícias com autenticação, autorização por usuário, testes, migrations e documentação de arquitetura. Use dados inventados. Publique análise de riscos e decisões de segurança; nunca credenciais reais.
 
 **Checklist de aprovação:** [ ] funcionalidades testadas · [ ] API documentada · [ ] lógica de autorização validada · [ ] secrets ausentes do Git · [ ] CI reproduzível · [ ] limitações descritas.
+
+## Áreas complementares e vídeos
+
+**[Veja o mapa das áreas dev](../DEV_AREAS.md)** (frontend, backend, mobile, banco de dados, testes, arquitetura, cloud, DevOps) e as **[fichas atribuídas e verificáveis de vídeos](../videos/INSIGHTS.md)**.
