@@ -1,0 +1,42 @@
+name: "📚 Indicar recurso"
+description: "Sugira um curso, documento, ferramenta ou referência útil."
+title: "[Recurso] "
+body:
+  - type: input
+    id: url
+    attributes:
+      label: "URL oficial"
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: "Área"
+      options:
+        - Fundamentos
+        - Redes e sistemas
+        - SOC / Blue Team
+        - AppSec
+        - Pentest ético
+        - Cloud / DevSecOps
+        - DFIR
+        - GRC / IAM
+        - Carreira
+        - Outra
+    validations:
+      required: true
+  - type: textarea
+    id: value
+    attributes:
+      label: "O que será aprendido?"
+      description: "Indique público, pré-requisitos, idioma, custo e a data em que conferiu o recurso."
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: "Verificações"
+      options:
+        - label: "Este recurso é legítimo e não incentiva testes sem autorização."
+          required: true

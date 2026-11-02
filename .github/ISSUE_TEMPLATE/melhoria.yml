@@ -1,0 +1,23 @@
+name: "🛠️ Corrigir ou melhorar conteúdo"
+description: "Aponte erro, link quebrado ou melhoria de acessibilidade."
+title: "[Melhoria] "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: "Arquivo ou link afetado"
+      placeholder: "trilhas/00-fundamentos.md"
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: "Problema encontrado"
+      description: "Explique o problema com exemplos sem dados privados."
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: "Sugestão de correção"
+      description: "Se possível, inclua referência oficial."

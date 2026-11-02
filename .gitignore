@@ -1,0 +1,27 @@
+# Sistema e editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+# Ambientes locais e segredos
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+# Dados de laboratório potencialmente sensíveis
+*.pcap
+*.pcapng
+*.evtx
+*.dmp
+*.dump
+*.log
+evidencias-privadas/
+private-evidence/
+__pycache__/
+.pytest_cache/
+.venv/
+node_modules/

@@ -1,0 +1,32 @@
+name: "🧪 Sugerir laboratório"
+description: "Proponha um exercício reproduzível e ético."
+title: "[Lab] "
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: "Objetivo e resultado esperado"
+      description: "O que a pessoa aprenderá e como mediremos sucesso?"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: "Ambiente e pré-requisitos"
+      description: "Descreva laboratório isolado ou plataforma de treinamento com autorização explícita."
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: "Evidência e critérios de aprovação"
+      description: "Como testar positivos e negativos sem publicar dados sensíveis?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: "Escopo responsável"
+      options:
+        - label: "O laboratório usa somente ambiente próprio ou expressamente autorizado."
+          required: true
