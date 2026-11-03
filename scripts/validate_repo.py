@@ -4,6 +4,7 @@
 No HTTP requests, scanners, or interactions with external systems.
 """
 from pathlib import Path
+from html.parser import HTMLParser
 from urllib.parse import unquote, urlsplit
 import re
 import sys
@@ -32,12 +33,42 @@ for file in ROOT.rglob("*.md"):
             errors.append(f"{file.relative_to(ROOT)} missing/out-of-scope link: {raw}")
         elif not path.exists():
             errors.append(f"{file.relative_to(ROOT)} missing link target: {raw}")
-for name in ("site/index.html","site/style.css","site/data.js","site/app.js","site/favicon.svg",".github/workflows/quality.yml"):
+for name in ("site/index.html","site/community.html","site/community.css","site/style.css","site/data.js","site/app.js","site/favicon.svg",".github/workflows/quality.yml"):
     if not (ROOT/name).exists():
         errors.append(f"Missing required asset {name}")
 html = (ROOT/"site/index.html").read_text(encoding="utf-8")
 for name in ("style.css","data.js","app.js","favicon.svg"):
     if name not in html:errors.append(f"site/index.html missing asset reference {name}")
+class SiteLinkChecker(HTMLParser):
+    def __init__(self, source):
+        super().__init__()
+        self.source = source
+    def handle_starttag(self, tag, attrs):
+        attributes = dict(attrs)
+        for attr in ("href", "src"):
+            raw = attributes.get(attr, "")
+            if not raw:
+                continue
+            parsed = urlsplit(raw)
+            if parsed.scheme or raw.startswith(("#", "//", "mailto:", "data:")):
+                continue
+            target = unquote(parsed.path)
+            if not target:
+                continue
+            candidate = (self.source.parent / target).resolve()
+            if not candidate.is_relative_to(ROOT) or not candidate.exists():
+                errors.append(f"{self.source.relative_to(ROOT)} missing site asset: {raw}")
+        if attributes.get("target") == "_blank":
+            rel = set((attributes.get("rel") or "").split())
+            if not {"noopener", "noreferrer"}.issubset(rel):
+                errors.append(f"{self.source.relative_to(ROOT)} unsafe external link missing rel")
+
+for name in ("site/index.html", "site/community.html"):
+    source = ROOT / name
+    if source.exists():
+        parser = SiteLinkChecker(source)
+        parser.feed(source.read_text(encoding="utf-8"))
+
 if errors:
     print("\n".join(errors),file=sys.stderr)
     sys.exit(1)

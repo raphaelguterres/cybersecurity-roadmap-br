@@ -87,6 +87,22 @@ Contribuições simples são importantes: revisar link, explicar um conceito, tr
 
 Frequência dos desafios e revisões será definida pelos colaboradores; não afirmamos manter calendário automático enquanto não existir.
 
+## 🤝 Comunidade aberta — comece sem experiência
+
+Não precisa ser especialista para fazer parte. A iniciativa tem um **[portal de comunidade](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html)** com caminhos objetivos para apresentar dúvidas, participar de grupos assíncronos, resolver desafios e colaborar em pequenas melhorias.
+
+| Como participar | Primeira ação |
+| --- | --- |
+| 👋 **Novo na área** | [Primeiros passos em 5 minutos](PRIMEIRA_CONTRIBUICAO.md) |
+| 📚 **Estudar em grupo** | [Rodas assíncronas de quatro semanas](GRUPOS_DE_ESTUDO.md) |
+| 🧪 **Praticar com segurança** | [Desafio comunitário #01 — logs sintéticos](DESAFIO_COMUNIDADE_01.md) |
+| 🛠️ **Contribuir com conteúdo** | [Issue inicial ou revisão de fonte](https://github.com/raphaelguterres/cybersecurity-roadmap-br/issues) |
+| 🧭 **Ajudar a manter** | [Governança e revisão voluntária](GOVERNANCA.md) |
+
+**[Abrir portal da comunidade ↗](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html)** · **[Participar no Discussions ↗](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions)**
+
+> Sem necessidade de informar dados pessoais, sem ranking e sem promessa de mentoria ou certificado. A participação e as revisões são voluntárias.
+
 ## Qualidade, segurança e execução
 
 - GitHub Actions verifica sintaxe JavaScript, integridade do catálogo, links locais, estrutura e arquivos do portal.

@@ -1,43 +1,67 @@
 # Comunidade Cybersecurity Roadmap BR
 
-Nossa missão é **transformar estudo solitário em aprendizado colaborativo e acessível**.
+> **Missão:** tornar o aprendizado de cibersegurança e engenharia de software acessível, prático, ético e colaborativo em português.
 
-## Onde participar
+**[Painel da comunidade](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html)** · **[Começar](START-HERE.md)** · **[Discussions](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions)** · **[Primeira contribuição](PRIMEIRA_CONTRIBUICAO.md)**
 
-- **Discussions:** apresentações, perguntas, grupos de estudos, compartilhamento de projetos, recursos e vitórias de aprendizado.
-- **Issues:** correções, sugestões bem delimitadas e pedidos de novos laboratórios.
-- **Pull Requests:** conteúdo novo, atualizações de links, revisão técnica e inclusão.
-- **Stars e forks:** ajudem o conteúdo a chegar a mais pessoas; não substituem contribuições reais.
+## Escolha como participar
 
-## Sugestão de categorias para Discussions
+| Meu objetivo | Primeira ação | Onde continuar |
+| --- | --- | --- |
+| Estou começando em TI | Apresentar interesse, disponibilidade opcional e trilha inicial | [Discussions — General](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions) |
+| Tenho dúvidas sobre segurança | Compartilhar pergunta com contexto, fonte consultada e o que já tentei, sem dados privados | [Discussions — Q&A](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions) |
+| Quero estudar acompanhado | Entrar ou propor um ciclo assíncrono de quatro semanas | [Grupos de estudo](GRUPOS_DE_ESTUDO.md) |
+| Quero mostrar projeto/laboratório | Publicar objetivo, arquitetura resumida, evidência **anonimizada** e limitações | [Discussions — Show and tell](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions) |
+| Quero melhorar o projeto | Selecionar uma revisão pequena ou propor material novo por Issue | [Primeira contribuição](PRIMEIRA_CONTRIBUICAO.md) |
+| Tenho experiência e quero ajudar | Revisar conteúdo, testar laboratórios, dar feedback respeitoso | [Guia de revisão](GOVERNANCA.md) |
 
-| Categoria | Finalidade |
-| --- | --- |
-| 👋 Apresente-se | Área de interesse, experiência e o que deseja aprender. |
-| ❓ Dúvidas | Perguntas técnicas com contexto, sem segredos. |
-| 📚 Grupo de estudos | Combinar sessões e marcos de estudo. |
-| 🧪 Mostre seu laboratório | Evidências desidentificadas, método e lições. |
-| 🛠️ Ideias | Novas trilhas, materiais, melhorias e revisões. |
-| 🎉 Conquistas | Aprendizados reais, projetos e contribuições. |
+Nenhuma participação exige revelar identidade, cidade, empresa, telefone, idade, instituição ou disponibilidade de horário.
 
-*As categorias são uma proposta editorial; a configuração do GitHub pode variar.*
+## Dinâmicas de comunidade
 
-## Primeira contribuição em 15 minutos
+### 1. Boas-vindas e apresentação
 
-1. Leia o [Código de Conduta](CODE_OF_CONDUCT.md).
-2. Leia uma trilha e procure um conceito incompleto, erro ou link quebrado.
-3. Abra uma Issue com o problema **ou** faça fork e envie PR com a correção.
-4. Compartilhe referências que confirmem a alteração.
-5. Responda com respeito a dúvidas de outras pessoas, inclusive de iniciantes.
+Use uma mensagem simples: **minha área de interesse**, **o que quero aprender nas próximas quatro semanas** e **o tipo de contribuição que posso fazer**. Compartilhe apenas o que for confortável; dados pessoais não são necessários.
 
-## Princípios
+### 2. Rodas de estudos abertas
 
-**Acolhimento:** perguntas de nível inicial são válidas.  
-**Evidência:** diferenciar fato, opinião e hipótese.  
-**Legalidade:** escopo autorizado, privacidade e prática responsável.  
-**Acessibilidade:** linguagem clara, texto alternativo em imagens e links úteis.  
-**Colaboração:** autoria respeitada e revisão construtiva.
+A proposta é trabalhar em pequenos ciclos de quatro semanas com tarefas assíncronas, sem cobrança de presença, metas financeiras ou canal externo obrigatório. Veja [GRUPOS_DE_ESTUDO.md](GRUPOS_DE_ESTUDO.md).
 
-Evite publicidade, recrutamento invasivo, divulgação de dumps, credenciais, amostras perigosas, dados privados ou conteúdo ilegal.
+### 3. Desafios revisáveis
 
-**Padrão editorial:** a primeira versão está em português. Termos em inglês são bem-vindos quando acompanhados de contexto.
+Participe do [desafio de abertura da comunidade](DESAFIO_COMUNIDADE_01.md) ou dos [seis desafios educacionais](challenges/README.md). A comunidade pode comentar os métodos e as conclusões. **Não existe ranking, premiação, certificado ou validação profissional automática.**
+
+### 4. Contribuição de baixo atrito
+
+Aceitamos correções de escrita, traduções **autorizadas**, revisão de fontes, melhorias de acessibilidade, explicações, testes de conteúdo e laboratórios seguros. Comece por [PRIMEIRA_CONTRIBUICAO.md](PRIMEIRA_CONTRIBUICAO.md).
+
+## Guia rápido de Discussions
+
+As categorias nativas atualmente disponíveis no repositório são **Announcements, General, Ideas, Polls, Q&A e Show and tell**. Use *Q&A* para dúvidas, *Ideas* para novas propostas, *Show and tell* para projetos próprios e *General* para apresentações e grupos. Não prometa categorias específicas ainda não configuradas.
+
+**Discussões** são para conversa, ajuda e revisão colaborativa. **Issues** são para trabalho rastreável com escopo e entrega. **PRs** são para alterações de arquivos/código.
+
+## Como contribuir sem expor dados
+
+- Trate sistemas de terceiros como fora de escopo; só execute testes em laboratório próprio ou com autorização explícita.
+- Não publique credenciais, tokens, cookies, evidências brutas, arquivos de vítimas, IPs/domínios internos ou dados pessoais.
+- Compartilhe imagens com texto alternativo e documentos legíveis, evitando capturas desnecessárias.
+- Antes de divulgar a solução de um desafio de terceiros, respeite as regras da plataforma educacional.
+- Mantenha respeito nas revisões; não ridicularize dúvidas iniciais.
+- Cite autor, URL, data e versão quando usar referências técnicas externas.
+- Não copie transcrições ou cursos pagos; consulte a [curadoria atribuída](videos/INSIGHTS.md).
+
+## Organização transparente
+
+O mantenedor inicial é [Raphael Guterres](https://github.com/raphaelguterres). Revisão, facilitação e mentoria **são voluntárias**; não há promessa de atendimento imediato nem mentores designados. Mudanças grandes devem ser propostas via Issue e revisadas antes do merge. Veja [GOVERNANCA.md](GOVERNANCA.md), [CONTRIBUTING.md](CONTRIBUTING.md) e [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
+
+## Como avaliamos saúde da comunidade
+
+Preferimos **utilidade e participação sustentável** a números de estrelas:
+- Tempo até uma pergunta receber orientação útil (sem SLA prometido).
+- Issues iniciais com instruções reproduzíveis.
+- PRs com revisão respeitosa, correções e reconhecimento da autoria.
+- Labs cuja documentação foi testada e atualizada.
+- Links quebrados corrigidos e conteúdo desatualizado revisado.
+
+Não coletamos histórico de progresso dos estudantes. Os dados do Study OS ficam no navegador de cada pessoa.
