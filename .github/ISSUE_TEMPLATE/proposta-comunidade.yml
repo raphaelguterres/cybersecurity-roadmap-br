@@ -1,0 +1,47 @@
+name: "🤝 Propor iniciativa da comunidade"
+description: "Sugira grupo de estudo, desafio, revisão coletiva ou melhoria de participação."
+title: "[Comunidade] "
+body:
+  - type: markdown
+    attributes:
+      value: "Para dúvidas e apresentações, prefira Discussions. Issues são para propostas com entrega concreta. Não inclua dados pessoais."
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Tipo de proposta"
+      options:
+        - Grupo de estudo assíncrono
+        - Desafio ou laboratório
+        - Acessibilidade e inclusão
+        - Curadoria e revisão de fontes
+        - Outro formato de colaboração
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Necessidade da comunidade"
+      description: "Quem se beneficia e qual dificuldade esta proposta resolve?"
+    validations:
+      required: true
+  - type: textarea
+    id: plan
+    attributes:
+      label: "Plano executável"
+      description: "Passos, material de referência, resultado esperado e forma de participar sem reunião obrigatória."
+    validations:
+      required: true
+  - type: textarea
+    id: done
+    attributes:
+      label: "Critérios de conclusão"
+      description: "Como saberemos que a proposta ajudou? O que não está prometido?"
+    validations:
+      required: true
+  - type: checkboxes
+    id: ethics
+    attributes:
+      label: "Segurança e respeito"
+      options:
+        - label: "A proposta não exige dados privados, testes não autorizados nem serviços pagos."
+          required: true

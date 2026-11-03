@@ -10,12 +10,16 @@
 | Tenho interesse em engenharia de software | [Dev e carreira](trilhas/11-dev-engineering.md) + [Vídeos](videos/README.md) | Criar uma pequena API com testes e README |
 | Quero um plano mais estruturado | [Roadmap de 24 semanas](ROADMAP.md) | Complete o primeiro ciclo no seu ritmo |
 
+## Aprenda também com outras pessoas
+
+A comunidade tem [um portal de entrada](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html), [grupos assíncronos](GRUPOS_DE_ESTUDO.md), [primeiro desafio](DESAFIO_COMUNIDADE_01.md), [guia de primeira contribuição](PRIMEIRA_CONTRIBUICAO.md) e [Discussions](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions). Você pode participar sem revelar informações pessoais ou atender encontros obrigatórios.
+
 ## Passos
 
 1. Abra a [biblioteca de estudos](RECURSOS.md) para referências oficiais e de acesso livre.
 2. Leia os conceitos antes de usar ferramentas. Responda: **o que, por quê, como validar?**
 3. Use [laboratórios guiados](labs/README.md) e preencha o [relatório](labs/modelo-relatorio.md).
-4. Registre seu progresso **pessoalmente**, no caderno ou no dashboard, quando ele estiver publicado. O dashboard usa armazenamento apenas no navegador; exporte backup.
+4. Registre seu progresso **pessoalmente**, no caderno ou no dashboard, já publicado. O dashboard usa armazenamento apenas no navegador; exporte backup.
 5. Se encontrou algo a melhorar, [colabore](CONTRIBUTING.md).
 
 ## Como usar o dashboard

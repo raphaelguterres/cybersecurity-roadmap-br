@@ -2,6 +2,10 @@
 
 Obrigado por tornar conhecimento de cibersegurança mais acessível. Contribuições de iniciantes e especialistas são igualmente bem-vindas.
 
+**Atalho:** [Sua primeira contribuição, em 5, 15 ou 60 minutos](PRIMEIRA_CONTRIBUICAO.md) · [Comunidade](COMUNIDADE.md) · [Governança](GOVERNANCA.md).
+
+Se pretende organizar uma roda de estudo ou desafio, leia [GRUPOS_DE_ESTUDO.md](GRUPOS_DE_ESTUDO.md) e abra uma Issue do tipo **Propor iniciativa da comunidade**. Perguntas gerais vão para Discussions, evitando misturar suporte e trabalho técnico.
+
 ## Antes de começar
 
 1. Leia o [Código de Conduta](CODE_OF_CONDUCT.md) e a [Política de Segurança](SECURITY.md).

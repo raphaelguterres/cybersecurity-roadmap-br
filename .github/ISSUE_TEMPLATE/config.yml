@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: "💬 Dúvidas e apresentações — GitHub Discussions"
+    url: "https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions"
+    about: "Faça perguntas, encontre grupos de estudo, compartilhe projetos e participe da comunidade."
+  - name: "🛡️ Relatar vulnerabilidade de forma responsável"
+    url: "https://github.com/raphaelguterres/cybersecurity-roadmap-br/blob/main/SECURITY.md"
+    about: "Não publique detalhes sensíveis em Issues. Consulte as opções de contato privado."

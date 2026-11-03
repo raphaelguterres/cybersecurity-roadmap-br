@@ -22,6 +22,10 @@ Acesse **http://localhost:8000**. Não exponha o servidor para Internet pública
 - Progresso autodeclarado salvo exclusivamente no `localStorage`, no navegador.
 - Backup JSON por exportação/importação **manual**, com validação de chaves e tamanho.
 
+## Comunidade aberta
+
+A página [community.html](community.html) oferece acolhimento, orientações para grupos de estudo e desafios, primeiros PRs e governança. Ela compartilha a identidade visual do dashboard, mas não altera o progresso salvo dos estudantes.
+
 ## Privacidade e limites
 
 Não há login, banco, cookie, rastreamento, telemetria ou coleta de IP do visitante implementados pelo portal. O provedor de hospedagem pode manter logs de acesso segundo suas políticas. Links externos abrem outros sites, sujeitos a políticas próprias.
