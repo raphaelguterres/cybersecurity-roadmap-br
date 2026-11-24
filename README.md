@@ -1,122 +1,35 @@
-<div align="center">
+# Cybersecurity Roadmap BR
 
-# 🛡️ Cybersecurity Roadmap BR
+**Trilhas gratuitas em português, com laboratórios e modelos de relatório.**
 
-### Segurança, desenvolvimento e carreira — do primeiro conceito à prática documentada
+Comece por fundamentos, escolha uma área e documente o que você observou em cada prática. O plano de 24 semanas organiza o percurso. O Study OS registra o progresso no próprio navegador e permite exportar um backup em JSON.
 
-**OPEN SOURCE · 100% PT-BR · SEM CADASTRO · CONTRIBUIÇÕES ABERTAS**
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/img/resumo-escuro.png">
+  <img src="docs/img/resumo-claro.png" width="590" alt="Percurso de estudo com 24 semanas, oito laboratórios e doze trilhas de estudo.">
+</picture>
 
-[![Docs](https://img.shields.io/badge/Study_OS-Dashboard-BAF568?style=flat-square&labelColor=0D121A)](site/README.md)
-[![GitHub Actions](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/quality.yml/badge.svg)](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/quality.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-0D121A?style=flat-square)](LICENSE)
-[![Contribuições](https://img.shields.io/badge/Contribuições-Bem--vindas-BAF568?style=flat-square&labelColor=0D121A)](CONTRIBUTING.md)
+[Abrir Study OS](https://raphaelguterres.github.io/cybersecurity-roadmap-br/) · [Primeiros passos](START-HERE.md) · [Plano de 24 semanas](ROADMAP.md)
 
-**[🖥️ ABRIR DASHBOARD STUDY OS](https://raphaelguterres.github.io/cybersecurity-roadmap-br/)** · **[🚀 Comece aqui](START-HERE.md)** · **[🗺️ Roadmap 24 semanas](ROADMAP.md)** · **[🤝 Comunidade](COMUNIDADE.md)**
+## Trilhas de estudo
 
-</div>
+- **Base** · [Fundamentos](trilhas/00-fundamentos.md) · [Redes e sistemas](trilhas/01-redes-sistemas.md) · [Programação](trilhas/02-programacao.md)
+- **Defesa e investigação** · [SOC e Blue Team](trilhas/03-soc-blue-team.md) · [DFIR](trilhas/07-dfir.md) · [Threat intelligence](trilhas/09-threat-intelligence.md)
+- **Aplicações e infraestrutura** · [AppSec](trilhas/04-appsec.md) · [Pentest ético](trilhas/05-pentest-etico.md) · [Cloud e DevSecOps](trilhas/06-cloud-devsecops.md) · [GRC e IAM](trilhas/08-grc-iam.md)
+- **Desenvolvimento profissional** · [Carreira](trilhas/10-carreira.md) · [Engenharia de software](trilhas/11-dev-engineering.md)
 
----
+## Da leitura à prática
 
-## Aprenda, pratique, documente e compartilhe
+Os laboratórios trazem requisitos, escopo e critérios de conclusão. Use o modelo de relatório para guardar a hipótese, o teste e o resultado. O painel também reúne desafios e um quiz de revisão. [Laboratórios](labs/README.md) · [Desafios](challenges/README.md) · [Modelo de relatório](labs/modelo-relatorio.md)
 
-**Cybersecurity Roadmap BR** é uma iniciativa comunitária gratuita para ajudar estudantes e profissionais a construir conhecimento em segurança digital e engenharia de software com **evidências reais de aprendizado**, sem promessas de emprego ou certificação.
-
-```text
-FUNDAMENTOS → REDES + SISTEMAS → PROGRAMAÇÃO
-                              ├── SOC / BLUE TEAM / DETECTION
-                              ├── APPSEC / PENTEST ÉTICO
-                              ├── CLOUD / DEVSECOPS
-                              ├── DFIR / THREAT INTELLIGENCE
-                              ├── GRC / IAM
-                              └── ENGENHARIA DEV / CARREIRA
-                                      ↓
-                      LABORATÓRIO → TESTES → RELATÓRIO
-                                      ↓
-                          COMUNIDADE + PORTFÓLIO
-```
-
-## Study OS — dashboard exclusivo de estudos
-
-Uma aplicação web estática em `site/`, com **HTML, CSS e JavaScript puro**, sem dependência de banco, login, servidor próprio ou serviço pago. O portal está publicado no [GitHub Pages](https://raphaelguterres.github.io/cybersecurity-roadmap-br/).
-
-**Inclui:** progresso por módulo e trilha, 24 semanas marcáveis, oito laboratórios, seis desafios, quiz com correção, pesquisa de fontes oficiais, referências de vídeos de desenvolvedores e backup JSON importável/exportável.
-
-> **Privacidade:** o progresso permanece no `localStorage` do dispositivo; não é enviado a este projeto. Limpar os dados do navegador apaga o progresso se não houver backup. É um registro **autodeclarado**, não uma certificação.
-
-**[Acessar dashboard online](https://raphaelguterres.github.io/cybersecurity-roadmap-br/)** · **[Ver código](site/)** · **[Executar localmente](site/README.md)** · **[Status de publicação](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/deploy-pages.yml)**
-
-## Trilhas organizadas por nível
-
-| Trilha | Nível sugerido | Guia |
-| --- | --- | --- |
-| 00 · Fundamentos | Iniciante | [Estudar](trilhas/00-fundamentos.md) |
-| 01 · Redes e sistemas | Iniciante | [Estudar](trilhas/01-redes-sistemas.md) |
-| 02 · Programação | Iniciante | [Estudar](trilhas/02-programacao.md) |
-| 03 · SOC / Blue Team | Intermediário | [Estudar](trilhas/03-soc-blue-team.md) |
-| 04 · Application Security | Intermediário | [Estudar](trilhas/04-appsec.md) |
-| 05 · Pentest ético | Intermediário | [Estudar](trilhas/05-pentest-etico.md) |
-| 06 · Cloud / DevSecOps | Intermediário | [Estudar](trilhas/06-cloud-devsecops.md) |
-| 07 · DFIR / Resposta a incidentes | Avançado | [Estudar](trilhas/07-dfir.md) |
-| 08 · GRC / IAM | Iniciante | [Estudar](trilhas/08-grc-iam.md) |
-| 09 · Threat Intelligence | Avançado | [Estudar](trilhas/09-threat-intelligence.md) |
-| 10 · Carreira | Iniciante | [Estudar](trilhas/10-carreira.md) |
-| 11 · Engenharia de software / Dev | Iniciante → Intermediário | [Estudar](trilhas/11-dev-engineering.md) |
-
-**Os níveis são orientação de entrada**, não rótulos de senioridade profissional.
-
-## Laboratórios, desafios e avaliações
-
-- [8 laboratórios práticos](labs/README.md), com requisitos, escopo permitido, evidência e critérios.
-- [6 desafios comunitários](challenges/README.md) para realizar de forma ética.
-- [Quiz interativo](site/README.md) com perguntas de fundamentos, SOC, AppSec, DFIR e Cloud.
-- [Modelo de relatório](labs/modelo-relatorio.md) para padronizar portfólio verificável.
-
-## Fontes de estudo com autoria e contexto
-
-Priorizamos documentação primária como **NIST, CISA, MITRE, OWASP, Wazuh, Microsoft Learn, Python, MDN, GitHub Skills e Wireshark**.
-
-**[📚 Biblioteca curada](RECURSOS.md)** · **[🧭 Áreas de desenvolvimento](DEV_AREAS.md)** · **[🎬 Vídeos e exercícios](videos/README.md)** · **[🧠 Insights de vídeos atribuídos](videos/INSIGHTS.md)**
-
-Conteúdos em vídeo são **referências externas atribuídas**. As atividades propostas são do nosso projeto e não resumem vídeos sem verificação. Opiniões e tendências devem ser contrastadas com fontes técnicas.
+A biblioteca prioriza documentação das organizações e autores que mantêm cada referência. [Biblioteca](RECURSOS.md) · [Áreas de desenvolvimento](DEV_AREAS.md) · [Vídeos atribuídos](videos/README.md)
 
 ## Comunidade
 
-Contribuições simples são importantes: revisar link, explicar um conceito, traduzir termos respeitando direitos, propor laboratório ou adicionar fonte verificável.
+Você pode começar revisando um link, relatando um erro ou propondo um exercício. As rodas de estudo são assíncronas e a participação é voluntária. [Portal da comunidade](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html) · [Primeira contribuição](PRIMEIRA_CONTRIBUICAO.md) · [Grupos de estudo](GRUPOS_DE_ESTUDO.md) · [Discussões](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions)
 
-**[💬 Discussions](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions)** · **[🛠️ Issues](https://github.com/raphaelguterres/cybersecurity-roadmap-br/issues)** · **[🔀 Pull Requests](https://github.com/raphaelguterres/cybersecurity-roadmap-br/pulls)** · **[Como contribuir](CONTRIBUTING.md)**
+## Projeto aberto
 
-Frequência dos desafios e revisões será definida pelos colaboradores; não afirmamos manter calendário automático enquanto não existir.
+O Study OS é um site estático em HTML, CSS e JavaScript. O registro de estudos usa o armazenamento local do navegador. Exporte o backup antes de limpar os dados do site. [Executar localmente](site/README.md) · [Integração contínua](https://github.com/raphaelguterres/cybersecurity-roadmap-br/actions/workflows/quality.yml) · [Plano da versão 2.0](ROADMAP_V2.md)
 
-## 🤝 Comunidade aberta — comece sem experiência
-
-Não precisa ser especialista para fazer parte. A iniciativa tem um **[portal de comunidade](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html)** com caminhos objetivos para apresentar dúvidas, participar de grupos assíncronos, resolver desafios e colaborar em pequenas melhorias.
-
-| Como participar | Primeira ação |
-| --- | --- |
-| 👋 **Novo na área** | [Primeiros passos em 5 minutos](PRIMEIRA_CONTRIBUICAO.md) |
-| 📚 **Estudar em grupo** | [Rodas assíncronas de quatro semanas](GRUPOS_DE_ESTUDO.md) |
-| 🧪 **Praticar com segurança** | [Desafio comunitário #01 — logs sintéticos](DESAFIO_COMUNIDADE_01.md) |
-| 🛠️ **Contribuir com conteúdo** | [Issue inicial ou revisão de fonte](https://github.com/raphaelguterres/cybersecurity-roadmap-br/issues) |
-| 🧭 **Ajudar a manter** | [Governança e revisão voluntária](GOVERNANCA.md) |
-
-**[Abrir portal da comunidade ↗](https://raphaelguterres.github.io/cybersecurity-roadmap-br/community.html)** · **[Participar no Discussions ↗](https://github.com/raphaelguterres/cybersecurity-roadmap-br/discussions)**
-
-> Sem necessidade de informar dados pessoais, sem ranking e sem promessa de mentoria ou certificado. A participação e as revisões são voluntárias.
-
-## Qualidade, segurança e execução
-
-- GitHub Actions verifica sintaxe JavaScript, integridade do catálogo, links locais, estrutura e arquivos do portal.
-- GitHub Pages publica somente conteúdo estático após merge em `main`, quando habilitado.
-- Scripts de validação não executam exploits nem acessam infraestrutura de terceiros.
-- Sem dados pessoais, credenciais, evidências privadas ou materiais sem licença em PRs.
-- Política de reporte responsável: [SECURITY.md](SECURITY.md).
-
-## Próximos passos
-
-**[Plano da versão 2.0](ROADMAP_V2.md)** — documentação, labs, desafios, conteúdo, QA, acessibilidade, revisão humana e crescimento gradual da comunidade.
-
----
-
-**Mantenedor inicial:** [Raphael Guterres](https://github.com/raphaelguterres) · [Código de conduta](CODE_OF_CONDUCT.md) · [Licença MIT](LICENSE)
-
-**Aviso:** projeto independente. Não possui vínculo, patrocínio ou endosso das organizações e criadores mencionados.
+[Como contribuir](CONTRIBUTING.md) · [Código de conduta](CODE_OF_CONDUCT.md) · [Reporte de segurança](SECURITY.md) · [Licença MIT](LICENSE)
